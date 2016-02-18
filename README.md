@@ -21,7 +21,8 @@ script/install
 
 ## thanks
 
-reference from
+referenced from
+
 1. https://github.com/holman/dotfiles
 1. https://github.com/rtomayko/dotfiles
 1. https://github.com/wookayin/dotfiles
