@@ -1,0 +1,27 @@
+#!/bin/bash
+#
+# Run all dotfiles installers.
+
+set -e
+
+cd "$(dirname $0)"/..
+
+if test ! $(which brew) && test "$(uname)" = "Darwin"
+then
+    echo "  Installing Home brew for you"
+    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+fi
+
+
+# Run tap homebrew/bundle
+brew tap | grep homebrew/bundle || brew tap homebrew/bundle
+
+echo "› brew update"
+brew update
+
+# Run Homebrew through the Brewfile
+echo "› brew bundle"
+brew bundle
+
+# find the installers and run them iteratively
+find . -name install.sh | while read installer ; do sh -c "${installer}" ; done
