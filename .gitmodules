@@ -1,10 +1,9 @@
-[submodule "bundle/nerdtree"]
-	path = bundle/nerdtree
+[submodule "vim/bundle/nerdtree"]
+	path = vim/bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
-#https://github.com/tpope/vim-pathogen
-[submodule "bundle/vim-flake8"]
-	path = bundle/vim-flake8
+[submodule "vim/bundle/vim-flake8"]
+	path = vim/bundle/vim-flake8
 	url = https://github.com/nvie/vim-flake8.git
-[submodule "bundle/vim-scala"]
-	path = bundle/vim-scala
+[submodule "vim/bundle/vim-scala"]
+	path = vim/bundle/vim-scala
 	url = https://github.com/derekwyatt/vim-scala.git
