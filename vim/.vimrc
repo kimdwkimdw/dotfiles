@@ -62,10 +62,10 @@ set dir=z:/
 "pathogen
 execute pathogen#infect()
 "NERDTree
-"map <C-n> :NERDTreeToggle<CR>
-autocmd vimenter * NERDTree
+map <C-n> :NERDTreeToggle<CR>
+let NERDTreeShowHidden=1
+"autocmd vimenter * NERDTree
 "autocmd vimenter * if !argc() | NERDTree | endif
-
 
 "remove mswin <C-a> select all
 nunmap <C-a>
