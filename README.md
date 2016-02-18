@@ -22,6 +22,6 @@ script/install
 ## thanks
 
 reference from
-[1] https://github.com/holman/dotfiles
-[2] https://github.com/rtomayko/dotfiles
-[3] https://github.com/wookayin/dotfiles
+1. https://github.com/holman/dotfiles
+1. https://github.com/rtomayko/dotfiles
+1. https://github.com/wookayin/dotfiles
