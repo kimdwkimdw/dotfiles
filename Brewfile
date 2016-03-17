@@ -13,6 +13,8 @@ brew "openssl"
 brew "numpy"
 brew "readline"
 brew "wget"
+brew "autoenv"
+brew "the_silver_searcher"
 
 cask "1password"
 cask "slack"
