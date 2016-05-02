@@ -69,3 +69,5 @@ let NERDTreeShowHidden=1
 
 "remove mswin <C-a> select all
 nunmap <C-a>
+let g:ag_prg="<custom-ag-path-goes-here> --vimgrep"
+
