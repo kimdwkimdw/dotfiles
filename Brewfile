@@ -22,6 +22,10 @@ brew "php55"
 brew "tmux"
 brew "git-lfs"
 
+#dev
+brew "redis"
+brew "rabbitmq"
+
 cask "1password"
 cask "slack"
 cask "steam"

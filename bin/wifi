@@ -1,0 +1,37 @@
+#!/bin/bash
+MAC=XX:XX
+IPHONE=XX:XX
+TARGET_INTERFACE=en0
+
+CURRENT_MAC="$(
+    ifconfig $TARGET_INTERFACE |
+    egrep -o '([A-Fa-f0-9]{2}:){5}[A-Fa-f0-9]{2}'
+)"
+
+case $1 in
+mac|-m)
+    echo "Going Mac. Welcome Back!" 1>&2
+    sudo ifconfig $TARGET_INTERFACE ether $MAC
+    ;;
+iphone|-i)
+    echo "Going iPhone. Don't forget turn iPhone's WiFi off!" 1>&2
+    sudo ifconfig $TARGET_INTERFACE ether $IPHONE
+    ;;
+status|-s)
+    if [ "$CURRENT_MAC" = "$MAC" ]; then
+        echo "Current MAC: Mac, $CURRENT_MAC"
+    else
+        echo "Current MAC: iPhone, $CURRENT_MAC"
+    fi
+    ;;
+help|-h)
+    echo "Usage) $(basename "$0") (status|mac|iphone)"
+    ;;
+*)
+    if [ "$CURRENT_MAC" = "$MAC" ]; then
+        $0 iphone
+    else
+        $0 mac
+    fi
+    ;;
+esac
