@@ -3,11 +3,13 @@ anyjson
 appnope
 billiard
 celery
+click
 cycler
 decorator
 greenlet
 ipython
 ipython-genutils
+jupyter
 kombu
 matplotlib
 msgpack-python
