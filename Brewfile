@@ -18,9 +18,12 @@ brew "wget"
 brew "autoenv"
 brew "the_silver_searcher"
 brew "neovim"
-brew "php55"
 brew "tmux"
 brew "git-lfs"
+
+# for alfred workflow
+brew "php56"      
+brew "php56-intl"
 
 #dev
 brew "redis"
