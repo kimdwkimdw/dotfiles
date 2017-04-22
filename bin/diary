@@ -1,0 +1,6 @@
+#!/bin/bash
+if [-z ${DIARY_PATH+x} ]; then
+    echo "set DIARY_PATH first"
+else
+    vim "$(echo $DIARY_PATH)/"`date +%Y/%Y%m%d`'.md'
+fi
