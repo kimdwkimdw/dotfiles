@@ -28,6 +28,7 @@ brew "php56-intl"
 #dev
 brew "redis"
 brew "rabbitmq"
+brew "imagemagick"
 
 cask "1password"
 cask "slack"
@@ -38,3 +39,4 @@ cask "launchcontrol"
 cask "licecap"
 cask "coconutbattery"
 cask "insomnia"
+cask "google-cloud-sdk"
