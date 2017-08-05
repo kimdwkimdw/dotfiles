@@ -2,5 +2,7 @@
 if [ -z ${DIARY_PATH+x} ]; then
     echo "set DIARY_PATH first"
 else
-    vim "$(echo $DIARY_PATH)/"`date +%Y/%m/%Y%m%d`'.md'
+    DATE_PATH="$(echo $DIARY_PATH)/"`date +%Y/%m` 
+    mkdir -p $DATE_PATH 
+    vim "$(echo $DATE_PATH)/"`date +%Y%m%d`'.md'
 fi
