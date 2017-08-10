@@ -20,6 +20,13 @@ Plug 'honza/vim-snippets'
 " Go Language
 Plug 'fatih/vim-go'
 
+" Vue.js
+Plug 'posva/vim-vue'
+
+" vim-airline
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+
 " Add plugins to &runtimepath
 call plug#end()
 
@@ -35,6 +42,7 @@ vmap <s-tab> <gv
 let g:pymode_options_max_line_length=120
 let g:pymode_lint_options_pep8 =
 	\ {'max_line_length': g:pymode_options_max_line_length}
+let g:pymode_lint_checkers = ['pylint', 'pyflakes', 'pep8', 'mccabe']
 
 " Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
 let g:UltiSnipsExpandTrigger="<c-Right>"
@@ -44,3 +52,10 @@ let g:UltiSnipsJumpBackwardTrigger="<c-Up>"
 " If you want :UltiSnipsEdit to split your window.
 let g:UltiSnipsEditSplit="vertical"
 
+
+" Airline
+" Enable the list of buffers
+let g:airline#extensions#tabline#enabled = 1
+
+" Show just the filename
+let g:airline#extensions#tabline#fnamemod = ':t'
