@@ -4,5 +4,5 @@ if [ -z ${DIARY_PATH+x} ]; then
 else
     DATE_PATH="$(echo $DIARY_PATH)/"`date +%Y/%m` 
     mkdir -p $DATE_PATH 
-    vim "$(echo $DATE_PATH)/"`date +%Y%m%d`'.md'
+    nvim "$(echo $DATE_PATH)/"`date +%Y%m%d`'.md'
 fi

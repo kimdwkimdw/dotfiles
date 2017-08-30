@@ -34,7 +34,10 @@ call plug#end()
 set nu
 set et
 set clipboard+=unnamedplus
+set autoindent
+
 colors elflord
+
 
 vmap <tab> >gv
 vmap <s-tab> <gv

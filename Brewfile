@@ -8,14 +8,11 @@ tap "neovim/neovim"
 tap "homebrew/php"
 
 #brew
-brew "python3"
 brew "phantomjs"
 brew "ntfs-3g"
 brew "openssl"
-brew "numpy", args:['with-python3']
 brew "readline"
 brew "wget"
-brew "autoenv"
 brew "the_silver_searcher"
 brew "neovim"
 brew "tmux"
@@ -29,6 +26,12 @@ brew "php56-intl"
 brew "redis"
 brew "rabbitmq"
 brew "imagemagick"
+
+#dev-python
+brew "python3"
+brew "numpy", args:['with-python3']
+brew "autoenv"
+brew "open-mpi"  #for mpi4py
 
 cask "1password"
 cask "slack"
