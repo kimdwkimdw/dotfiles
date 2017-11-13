@@ -1,0 +1,12 @@
+Host *
+ AddKeysToAgent yes
+ UseKeychain yes
+ IdentityFile ~/.ssh/id_rsa
+ ForwardX11 yes
+ Compression yes
+
+User deploy
+GSSAPIAuthentication yes
+
+UserKnownHostsFile=/dev/null
+strictHostKeyChecking=no
