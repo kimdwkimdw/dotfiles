@@ -17,6 +17,7 @@ brew "the_silver_searcher"
 brew "neovim"
 brew "tmux"
 brew "git-lfs"
+brew "bat"
 
 # for alfred workflow
 brew "php56"      
