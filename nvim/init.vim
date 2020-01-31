@@ -1,6 +1,6 @@
 call plug#begin('~/.config/nvim/plugged')
 
-Plug 'python-mode/python-mode', { 'branch': 'master'}
+Plug 'python-mode/python-mode', { 'tag': '0.10.0'}
 
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
@@ -26,6 +26,7 @@ Plug 'posva/vim-vue'
 " vim-airline
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'leafgarland/typescript-vim'
 
 " Add plugins to &runtimepath
 call plug#end()
@@ -62,3 +63,6 @@ let g:airline#extensions#tabline#enabled = 1
 
 " Show just the filename
 let g:airline#extensions#tabline#fnamemod = ':t'
+
+" fzf
+set rtp+=/usr/local/opt/fzf
