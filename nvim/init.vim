@@ -43,6 +43,10 @@ colors elflord
 vmap <tab> >gv
 vmap <s-tab> <gv
 
+
+let g:python_host_prog="/usr/local/bin/python2"
+let g:python3_host_prog="/usr/local/bin/python3"
+
 let g:pymode_options_max_line_length=120
 let g:pymode_lint_options_pep8 =
 	\ {'max_line_length': g:pymode_options_max_line_length}

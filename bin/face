@@ -1,0 +1,2 @@
+#!/bin/bash
+curl -s https://tree.kakaocorp.com/main/public/krew-image\?accountId\=$1 | imgcat
