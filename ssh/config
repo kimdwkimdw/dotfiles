@@ -1,7 +1,12 @@
+Host github-rtzr
+ HostName github.com
+ User git
+ IdentityFile ~/.ssh/id_MASKED_RTZR
+
 Host *
  AddKeysToAgent yes
  UseKeychain yes
- IdentityFile ~/.ssh/id_rsa
+ IdentityFile ~/.ssh/id_MASKED
  ForwardX11 yes
  Compression yes
 
