@@ -23,3 +23,8 @@
 	diffFilter = diff-highlight
 [color]
   ui = true
+[user]
+        name = Dongwoo Arthur Kim
+        email = 
+[includeIf "gitdir:~/dev/rtzr/"]
+        path = "~/.gitconfig.rtzr"
