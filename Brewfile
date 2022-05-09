@@ -37,6 +37,7 @@ brew "open-mpi"  #for mpi4py
 cask "1password"
 cask "coconutbattery"
 cask "dbeaver-community"
+cask "fig"
 cask "iina"
 cask "insomnia"
 cask "licecap"
