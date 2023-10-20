@@ -1,0 +1,29 @@
+[core]
+    excludesfile = ~/.gitignore_global
+    editor = nvim
+	pager = diff-so-fancy | less --tabs=4 -RFX
+	fileMode = true
+[user]
+	name = Arthur 
+	email = kimdwkimdw@gmail.com 
+[init]
+	templatedir = ~/.git-templates
+	defaultBranch = main
+[push]
+	default = simple
+	autoSetupRemote = true
+[branch]
+	autosetupmerge = always
+[pager]
+  diff = diff-highlight | less
+[alias]
+  graph = log --graph --pretty=format:'%Cblue%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+  gone = ! git fetch -p && git for-each-ref --format '%(refname:short) %(upstream:track)' | awk '$2 == \"[gone]\" {print $1}' | xargs -r git branch -D
+[url "git@github.com:"]
+	insteadOf = https://github.com/
+[interactive]
+  diffFilter = diff-highlight
+[color]
+  ui = true
+[commit]
+  template = ~/.stCommitMsg

@@ -1,0 +1,112 @@
+{
+    "editor.accessibilitySupport": "off",
+    // Go
+    "debugAdapter": "dlv-dap",
+    // Python
+    // "python.languageServer": "None", // disable pylance
+    // "python.defaultInterpreterPath": "/home/arthur/miniconda3/envs/py310/bin/python",
+    "[python]": {
+        "editor.defaultFormatter": null,
+        "editor.insertSpaces": true,
+        "editor.tabSize": 4,
+        // "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            // "source.fixAll": true,
+            // "source.fixAll.ruff": false,
+            // "source.organizeImports": true,
+        },
+        "editor.formatOnType": true,
+    },
+    "isort.args": [
+        "--profile",
+        "black",
+        "--line-length",
+        "120",
+    ],
+    "python.testing.pytestArgs": [
+        "-s",
+        "--collect-only",
+        "-q",
+    ],
+    "python.testing.pytestEnabled": false,
+    "python.analysis.exclude": [
+        "**/build",
+    ],
+    "black-formatter.args": [
+        "--line-length",
+        "120",
+    ],
+    "flake8.args": [
+        "--max-line-length",
+        "120",
+        "--ignore",
+        "F811,F841,E203,E402,E501,E712,W503,B019"
+    ],
+    // editor
+    "editor.minimap.enabled": false,
+    "editor.rulers": [
+        80,
+        120
+    ],
+    "editor.inlineSuggest.enabled": true,
+    // Vim
+    // "vim.enableNeovim": true,
+    "vim.hlsearch": true,
+    "vim.searchHighlightColor": "rgba(150, 150, 255, 0.3)",
+    "workbench.colorTheme": "Monokai",
+    "workbench.preferredDarkColorTheme": "Monokai",
+    "window.autoDetectColorScheme": true,
+    "terminal.integrated.env.osx": {
+        "FIG_NEW_SESSION": "1"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "ruff.args": [
+        "--line-length",
+        "120"
+    ],
+    "git.confirmSync": false,
+    "editor.formatOnSave": true,
+    "githubIssues.queries": [
+        {
+            "label": "My Issues",
+            "query": "default"
+        },
+        {
+            "label": "Created Issues",
+            "query": "author:${user} state:open repo:${owner}/${repository} sort:created-desc"
+        },
+        {
+            "label": "Recent Issues",
+            "query": "state:open repo:${owner}/${repository} sort:updated-desc"
+        }
+    ],
+    "githubPullRequests.fileListLayout": "tree",
+    "githubPullRequests.queries": [
+        {
+            "label": "Waiting For My Review",
+            "query": "is:open review-requested:${user}"
+        },
+        {
+            "label": "Assigned To Me",
+            "query": "is:open assignee:${user}"
+        },
+        {
+            "label": "Created By Me",
+            "query": "is:open author:${user}"
+        }
+    ],
+    "githubPullRequests.defaultDeletionMethod.selectLocalBranch": false,
+    "githubPullRequests.pullBranch": "never",
+    "terminal.integrated.inheritEnv": false,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "go.toolsManagement.autoUpdate": true,
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "prettier.quoteProps": "preserve",
+    "editor.fontFamily": "NanumGothicCoding ,Menlo, Monaco, 'Courier New', monospace",
+    "git.openRepositoryInParentFolders": "never",
+    "window.zoomLevel": 1,
+}

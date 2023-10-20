@@ -1,6 +1,6 @@
 call plug#begin('~/.config/nvim/plugged')
 
-Plug 'python-mode/python-mode', { 'tag': '0.10.0'}
+Plug 'python-mode/python-mode', { 'tag': '0.13.0'}
 
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
@@ -9,16 +9,16 @@ Plug 'junegunn/fzf.vim'
 " Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 
 
-Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
+" Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
 
 " Track the engine.
-Plug 'SirVer/ultisnips'
+" Plug 'SirVer/ultisnips'
 
 " Snippets are separated from the engine. Add this if you want them:
 Plug 'honza/vim-snippets'
 
 " Go Language
-Plug 'fatih/vim-go'
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 
 " Vue.js
 Plug 'posva/vim-vue'
@@ -27,6 +27,8 @@ Plug 'posva/vim-vue'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'leafgarland/typescript-vim'
+
+Plug 'nvim-lua/plenary.nvim'
 
 " Add plugins to &runtimepath
 call plug#end()
@@ -70,3 +72,9 @@ let g:airline#extensions#tabline#fnamemod = ':t'
 
 " fzf
 set rtp+=/usr/local/opt/fzf
+set belloff=all
+
+" Basic
+set et
+set ts=4
+set sw=4
